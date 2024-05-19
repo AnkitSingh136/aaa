@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Date and Time Display</title>
+    <script>
+        let newDate = new Date();
+        let dat = newDate.getDate();
+        let month = newDate.getMonth();
+        let year = newDate.getFullYear();
+        document.getElementById('date').innerHTML = dat + "-" + month + "-" + year;
+        function displaytime() {
+            let newDate = new Date();
+            let hours = w.getHours();
+            let minutes = w.getMinutes();
+            let seconds = w.getSeconds();
+            document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+        setInterval(displaytime, 1000);
+    </script>
+</head>
+
+<body>
+    <h1>Date and Time Display</h1>
+    <p>Today's date is: <span id="date"></span></p>
+    <p>Current time is: <span id="time"></span></p>
+</body>
+
+</html>

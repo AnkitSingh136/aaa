@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        
+    }
+    body{
+       background-image: url(https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg);
+      background-repeat: repeat-y;
+      background-size: cover;
+      justify-content: center;
+ 
+    }
+   div{
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+ margin-top: 40vh;
+  
+   }
+   .abc{
+    width: 300px;
+    height: 170px;
+    border: 5px solid rgb(18, 200, 237);
+    background-color:transparent;
+    border-radius: 30px;
+    
+   }
+   form{
+    margin-left:39px;
+    padding: 6px;
+    display: block;
+   }
+    
+   h1{
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy_1258-154643.jpg);
+    background-clip: text;
+    color: transparent;
+    background-position: center;
+   }
+  label{
+    display: block;
+    padding: 2px;
+  }
+  input{
+    border: 3px solid blueviolet;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  input::placeholder{
+    
+  }
+  #bg-video {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-size:auto;
+   
+}
+  </style>
+</head>
+<body>
+  <video id="bg-video" autoplay  loop>
+    <source src="ladhak1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+    <div class="abc"> <h1>Login page</h1>
+        <form>
+           
+            <label for="fname" >Full name:</label>
+            <input type="text" id="fname" placeholder="enter you full name ">
+            <label for="password">password:</label>
+            <input type="text" id="password" placeholder="enter you password">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <style>
+        nav{
+          background-color: rgb(6, 246, 246);
+          display: block;
+          text-align: center;
+          padding: 14px;
+        }
+        nav a{
+            padding: 20px;
+            text-decoration: none;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight:bolder;
+            color: rgb(255, 0, 136);
+            margin: 5px;
+        }
+        #hello{
+            display: none;
+            background-color: rgb(244, 139, 1);
+        }
+    </style>
+</head>
+<body>
+   
+    <button type="button" onclick="function1()">click me</button>
+    <nav >
+        <a href="">home</a><a href="">contact us</a><a href="">about us</a><a id="hello1" href="">explore</a>
+    </nav>
+    
+    <p id="hello">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt provident eius asperiores. Labore nostrum officiis atque explicabo laudantium natus, dolor vitae nemo ratione perferendis fugiat assumenda incidunt in ut aut.</p>
+    
+    <script>
+       
+            document.getElementById('hello1').onmouseenter=function(){mouseenter()};
+          document.getElementById('hello1').onmouseleave=function(){mouseleave()};
+        
+        function mouseenter(){
+            document.getElementById('hello').style.display='block';
+            document.getElementById('hello').style.backgroundColor='red';
+        }
+        function mouseleave(){
+            document.getElementById('hello').style.display='none';
+        }
+
+    </script>
+
+</body>
+</html>
